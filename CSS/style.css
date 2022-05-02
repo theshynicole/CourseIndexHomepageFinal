@@ -1,0 +1,49 @@
+@font-face {
+    font-family: myFont;
+    src: url(Fonts/Ridge5-Bold.otf);
+}
+h1{
+    font-family: "myFont";
+    
+}
+
+body{
+    background: rgb(146, 199, 252);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.item{
+    height: 100px;
+    border: 1px solid black;
+}
+
+p{
+    font-size: 20;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes anim{
+    0%{top: 500px;
+        left: 0px;}
+    25%{top: 500px;
+        left: 300px;
+        }
+    50%{
+        top: 100px;
+        left: 300%px;
+    }
+    75%{
+        top: 700px;
+        left: 200px;
+    }
+}
+.move{
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
